@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
   width: 100vw;
   min-width: 320px;
-  height: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
@@ -17,9 +16,8 @@ div {
   display: block;
 }
 
-header {
+#header {
   position: fixed;
-  background-color: white;
   top: 0;
   right: 0;
   left: 0;
@@ -27,23 +25,21 @@ header {
   display: block;
   margin: 0;
   width: 100%;
-  height: auto;
-}
-
-nav {
-  margin: 0 auto;
-  max-width: 1032px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 main {
   display: block;
   margin: 0 auto;
-  max-width: 1032px;
+  max-width: 1000px;
 }
 
 footer {
-  max-width: 1032px;
+  max-width: 1000px;
   margin: 0 auto;
   height: 150px;
 }
@@ -78,7 +74,8 @@ a {
 }
 
 @media screen and (min-width: 1071px) {
-  header {
+
+  #header {
     box-shadow: 0px 1px 2px #00000035;
   }
 
@@ -95,7 +92,7 @@ a {
     -ms-flex-pack: justify;
     justify-content: center;
     height: 60px;
-    width: 1000px;
+    width: 968px;
     padding: 0 16px;
   }
 
@@ -454,7 +451,7 @@ a {
     width: 50%;
   }
 
-  .mn-policy > a {
+  .mn-policy>a {
     text-decoration: none;
     color: #878787;
   }
@@ -502,7 +499,7 @@ a {
 }
 
 @media screen and (min-width: 761px) and (max-width: 1070px) {
-  header {
+  #header {
     box-shadow: 0px 1px 2px #00000035;
   }
 
@@ -513,11 +510,12 @@ a {
   }
 
   .nav {
+    margin: 0 auto;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     height: 60px;
-    width: 95vw;
+    max-width: 968px;
     padding: 0 16px;
   }
 
@@ -880,7 +878,7 @@ a {
     width: 50%;
   }
 
-  .mn-policy > a {
+  .mn-policy>a {
     text-decoration: none;
     color: #878787;
   }
@@ -929,13 +927,10 @@ a {
 
 @media screen and (max-width: 760px) {
   body {
-    width: 100vw;
-    height: auto;
     overflow-x: hidden;
   }
 
-  header {
-    width: 100vw;
+  #header {
     box-shadow: 0px 1px 2px #00000035;
   }
 
@@ -1303,7 +1298,7 @@ a {
     width: 100%;
   }
 
-  .mn-policy > a {
+  .mn-policy>a {
     text-decoration: none;
     color: #878787;
   }
